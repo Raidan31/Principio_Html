@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botões</title>
+</head>
+<body>
+    # button type button cria um botão, só será aplicavel se tiver um JS <br>
+    <br>
+    # button type reset cria um botão, que irá limpar os campos do formulario <br>
+    <br>
+    # button type submit cria um botão, que irá enviar o formulario - o enter no teclado aplica o evento submit <br>
+    <br>
+    # o onsubmit é a forma de validar antes de enviar para que formulario esteja preenchido <br>
+    <br>
+
+    <form onsubmit="" method="get">
+
+        <label> *Name: </label> <input type="text" name="name"> <br>
+        <br>
+        <label> *Idade: </label> <input type="number" name="age"> <br>
+        <br>
+        <label> *Password: </label> <input type="password" name="password"> <br>
+        <br>
+
+
+        <button type="button" onclick="alert('clicado')"> Clicavel </button>
+        <button type="reset" onclick="alert('limpado')"> Resetando </button>
+        <button type="submit" onclick="alert('enviado')"> Enviar </button>
+        
+
+
+    </form>
+</body>
+</html>

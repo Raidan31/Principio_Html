@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULÁRIO DE CADASTRO</title>
+</head>
+<body>
+    Formulário é o conjunto de dados digitados nesses campos <br>
+    form - name serve pra poder validar dps no JS, action ele indica para onde os dados irão, pode colocar o endereço do servidor. <br>
+    ainda no form - method a forma como a informação será enviada, post torna informação embaralhada
+    target serve para abrir na mesma aba ou não o envio da informação, autocomplete serve para armazenar os campos
+    onsubmit se refere a eventos que serão realizados após clicar no caso do formulário     <br>
+<br>
+    <form name="signup" action="" method="post" target="_blank" autocomplete="on" onsubmit="alert ('enviei o formulário')  ">
+
+        Nome: <input type="text" name = "name"> <br>
+        Idade: <input type="number" name ="age"> <br>
+        Senha: <input type="password" name ="password"> <br>
+        <button type="submit" > Enviar </button>
+
+
+    </form>
+</body>
+</html>

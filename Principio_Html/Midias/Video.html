@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+</head>
+<body>
+    # A tag video trabalha da mesma forma como a tag audio <br>
+    # a tag filha track permite criar um arquivo texto para criar legendas <br>
+    # kind auxilia na acessibilidade para o leitor de tela <br>
+    # srclang exibe o idioma da legenda <br>
+    # default define como padrão <br>
+    <br>
+
+    <video controls>
+        <source src="video.mp4">
+        <track src="legenda.vtt" kind="captions" srclang="en"/>
+        <track default src="legenda-pt-brvtt" kind="captions" srclang="pt-br"/>
+        Seu navegador não tem suporte a tag video
+    </video>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Meter_Progress </title>
+    <style>
+         p {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 1em;
+        }
+        h1 {
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 1em;
+        }
+        code{
+            background-color: #f1f1f1;
+            color: blue;
+        }
+
+        pre{
+            background-color: burlywood;
+            color: darkblue;
+        }
+
+    </style>
+
+   
+    
+</head>
+<body>
+   <h1>Meter_Progress </h1> 
+    
+    <p><strong><code>meter</code> é um medidor estatico serve para expressar uma medida </strong></p>
+    <p><strong><code>progress</code> Tem como finalidade definir o progresso por meio do <i>js</i> </strong></p>
+
+    <meter value="50" max="100" min="0"></meter>
+    <progress id="progress" max="100" min="0"></progress>
+
+<script>
+    var progress = document.getElementById('progress');
+    const interval = setInterval(() => {
+        progress.value += 10
+        if (progress.value >= 100 ){
+            alert("Carregamento Realizado com Sucesso")
+            clearInterval(interval);
+        }    
+    }, 1000);
+</script>
+    
+</body>
+</html>

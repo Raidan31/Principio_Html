@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        table tr:nth-child(even) {
+            background-color: rgb(139, 181, 124);
+        }
+        table tr:hover td{
+            background-color: rgb(125, 55, 178);
+        }
+
+    </style>
+</head>
+<body>
+    # Define um espaço onde serão colocados os dados tabulares <br>
+    # border - inclui a borda na tabela<br>
+    # align - center está centralizando a tabela na pagina <br>
+    # cellspacing - define o espaço entre as bordas da tabela <br>
+    # cellpadding - afasta o texto da borda <br>
+    # sumary - fornece uma descrição para o leitor de tela <br>
+    # tr - é a linha da tabela, engloba todas as celulas da linha. Via css é possivel editar as linhas <br>
+    # th - define o que é o cabeçalho na tabela, title serve para que apareça uma descrição da celula, serve para acessibilidade <br>
+    # td - celula comum  <br>
+    
+    <br>
+    <table sumary="esta tabela mostra o  nome e minha idade" border="1" width="500" align="center" cellspacing="15" cellpadding="20">
+        <tr>
+            <th title="Nome Completo">Nome </th>
+            <th>Idade </th>
+        </tr>
+
+        <tr>
+            <td >Raidan </td>
+            <td>27 </td>
+        </tr>
+
+        <tr>
+            <td>Maria </td>
+            <td>34 </td>
+        </tr>
+
+        <tr>
+            <td>João </td>
+            <td>31 </td>
+        </tr>
+
+        <tr>
+            <td>Jorge </td>
+            <td>21 </td>
+        </tr>
+
+    </table>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Partes da pizza de calabresa </title>
+</head>
+<body>
+    # A ideia do checkbox é que uma variavel(name) recebe multiplos valores, a [] está indicando que é uma lista <br>
+    # disable disabilita a opção  <br>
+    # hidden esconde do usuario
+
+    <form method="get"> 
+    <strong><h1>Você selecionou a pizza de calabresa</h1></strong>
+
+    <h3>Quais opcionais você deseja?</h3>
+
+    <label > + Queijo </label> <input type="checkbox" disabled name="opcional[]" value="Queijo" ><br>
+       <br>
+    <label hidden > + Azeitona </label> <input type="checkbox" hidden name="opcional[]" value="Azeitona" ><br>
+       <br>
+    <label > + Calabresa </label> <input type="checkbox" name="opcional[]" value="Calabresa"><br>
+       <br>
+    <label > + Cebola </label> <input type="checkbox" name="opcional[]" value="Cebola" ><br>
+       <br>
+
+    <h3>Borda recheada?</h3>
+           
+    <label > Sim </label> <input type="radio" name="escolha" value="sim"><br>
+       <br>
+    <label > Não </label> <input type="radio" name="escolha" value="não" ><br>
+       <br>
+    
+    <h3>Bebida?</h3>
+    
+    <label > Agua </label> <input type="radio" name="Bebida[0]" value="Agua" ><br>
+       <br>
+    <label > Suco </label> <input type="radio" name="Bebida[0]" value="Suco" ><br>
+       <br>
+    <label > Refrigerante </label> <input type="radio" name="Bebida[0]" value="Refrigerante"><br>
+       <br>
+    <label > Sem Bebida </label> <input type="radio" name="Bebida[0]" value="Sem Bebida" ><br>
+       <br>
+
+
+    <button>ENVIAR</button>
+
+
+    
+</form>
+</body>
+</html>

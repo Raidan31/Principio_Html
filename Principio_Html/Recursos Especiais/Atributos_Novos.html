@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Atributos_Novos no html 5 </title>
+    <style>
+         p {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 1em;
+        }
+        h1 {
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 1em;
+        }
+        code{
+            background-color: #f1f1f1;
+            color: blue;
+        }
+
+        pre{
+            background-color: burlywood;
+            color: darkblue;
+        }
+
+    
+    </style>
+
+   
+    
+</head>
+<body>
+   <h1 contenteditable>Atributos Novos no HTML 5 </h1>
+    
+    <p><strong><code>autofocus</code> Ao abrir o site o usuário será direcionado para o elemento que tiver este atributo </strong></p>
+    <p><strong><code>placeholder</code> Cria aqueles exemplos no elemento que tiver o atributo </strong></p>
+    <p><strong><code>required</code> Torna os campos obrigatórios  </strong></p>
+    <p><strong><code>disabled</code> Por meio do fieldset permite desabilitar todos os campos  </strong></p>
+    <p><strong><code>maxlength</code> Define o numero maximo de caracteres a serem escritos na textarea, exclusivo do textarea  </strong></p>
+    <p><strong><code>minlength</code> Define o numero minimo de caracteres a serem escritos na textarea, presente em todos os inputs   </strong></p>
+    <p><strong><code>form</code> Permite utilizar um input fora do campo form. ex:    </strong></p>
+    <p><strong><code>contenteditable</code> Permite tornar o elemento selecionado em um campo editavel  </strong></p>
+
+
+    <hr>
+
+    <p><strong>Exercícios:</strong></p>
+    
+
+    <form name="signup" action="" method="post" target="_blank" autocomplete="on" onsubmit="alert ('enviei o formulário')  ">
+        
+        <fieldset disabled> 
+        <legend>Nome e E-mail do Dev</legend>   
+        Nome: <input type="text" name = "name" placeholder="ex: Raidan" required> 
+        E-mail: <input type="email" name = "email" placeholder="raidan.nunes31@gmail.com" required>
+        <br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Idade do Dev</legend>   
+
+            Idade: <input type="number" name ="age" autofocus> <br>
+            <br>
+            </fieldset>
+        <br>   
+       
+        <fieldset>
+                <legend>Mensagem de Amor</legend>   
+                Mensagem: <textarea maxlength="10" minlength="5" name="mensagem" id="mensagem" cols="30" rows="10"></textarea> <br>
+                </fieldset>
+                <br>
+
+    </form>
+    
+    <h4>Estão fora da tag form, porem estão sendo atrelados pelo atributo form </h4>
+    <fieldset>
+        <legend>Senha do Dev</legend>   
+        Senha: <input type="password" name ="password" form="form"> <br>
+        </fieldset>
+        <br>
+        <button type="submit" form="form" > Enviar </button>
+</body>
+    
+</body>
+</html>

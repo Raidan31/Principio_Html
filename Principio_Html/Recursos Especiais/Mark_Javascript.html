@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Mark e Javascript </title>
+    <style>
+         p {
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.5;
+            margin-bottom: 1em;
+        }
+        h1 {
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 1em;
+        }
+        code{
+            background-color: #f1f1f1;
+            color: blue;
+        }
+
+        pre{
+            background-color: burlywood;
+            color: darkblue;
+        }
+
+    </style>
+
+   
+    
+</head>
+<body>
+   <h1>Mark e Javascript   </h1>
+    
+    <p><strong><code>mark</code> Tag marca texto com <i>Javascript</i> neste código foi criado o sistema busca no texto </strong></p>
+    <hr>
+    <input type="text" id="busca"> <br>
+    <p id="sinopse">
+        Tengen Toppa Gurren Lagann faz parte de um futuro fictício em que os seres humanos foram forçados a viver sob a superfície terrestre em isoladas civilizações subterrâneas. Essas "vilas" não têm nenhum contato com a superfície ou outras vilas. Devido a frequentes terremotos, as vilas tendem a constantemente extender-se nas profundezas da Terra os encarregados a essa tarefa são conhecidos como "escavadores". Em sua vila subterrânea, Kamina e Simon vivem de acordo com as regras impostas pelo chefe da vila. Tudo isso muda, quando Simon depara-se com um fantástico aparelho, no mesmo momento em que a paz na vila é quebrada por um violento intruso, seguidamente pela aparição de uma garota que combatia esse intruso, Yoko. Após esses acontecimentos, onde o "caminho para a superfície", é somente o início, eles passam a seguir caminhos que jamais poderiam imaginar. A jornada da Brigada Gurren começa, então.  
+
+    </p>
+
+<script>
+    var searchField = document.getElementById("busca");
+    var sinopse = document.getElementById("sinopse");
+    var textToSearch = sinopse.innerHTML;
+
+    function realizaBusca(busca){
+        const regex = new RegExp(`(${busca})(?!(.(?!<mark))*</mark>)+`, 'ig');
+        const ocurrences = textToSearch.match(regex);
+        sinopse.innerHTML = textToSearch.replace(regex, `<mark>${busca}</mark>`)
+    }
+
+    searchField.addEventListener('keyup',(e) => realizaBusca(e.target.value));
+</script>
+    
+</body>
+</html>

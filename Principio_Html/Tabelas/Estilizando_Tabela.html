@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+
+    <style>
+        table {
+            border: solid 1px red;
+        }
+        table thead th{
+            background-color: rgb(65, 91, 72);
+            color: rgb(74, 25, 25);
+        }
+        table tfoot td {
+            background-color: lightsalmon;
+        }
+
+        table tbody tr:nth-child(even) td {
+            background-color: rgb(59, 199, 78); 
+        }
+        table tbody tr:hover td {
+            background-color: rgb(167, 182, 169); 
+        } 
+   
+    </style>
+ 
+</head>
+<body>
+    # colspan - mesclam as celulas na horizontal
+    # rowspan - mesclam as celulas na vertical
+    
+    <table sumary="esta tabela mostra o  nome e minha idade" width="250" align="center" cellpadding="20">
+        <br>
+        <caption>Tabela de Idade</caption>
+
+        <tbody>
+        <tr>
+            <td >Raidan </td>
+            <td>27 </td>
+        </tr>
+
+        <tr>
+            <td>Maria </td>
+            <td>34 </td>
+        </tr>
+
+        <tr>
+            <td>João </td>
+            <td>31 </td>
+        </tr>
+
+        <tr>
+            <td>Jorge </td>
+            <td>21 </td>
+        </tr>
+        </tbody>
+
+        <tfoot>
+        <tr>
+            <td>Total </td>
+            <td>1 </td>
+        </tr>
+        </tfoot>
+
+        <thead>
+            <tr>
+                <th colspan="2"> Minha tabela</th>
+              
+            </tr>
+
+            <tr>
+                <th title="Nome Completo">Nome </th>
+                <th>Idade </th>
+            </tr>
+        </thead>
+    </table>
+</body>
+</html>
